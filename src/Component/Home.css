@@ -20,3 +20,39 @@
     justify-content: center;
   }
 }
+.footer-container {
+  margin-top: 40px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.button-load {
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(3, 172, 14);
+  padding: 10px;
+  margin: auto;
+  min-width: 40%;
+  display: none;
+}
+.button-load.active {
+  display: block;
+}
+.button-load:hover {
+  background-color: rgb(20, 139, 28);
+}
+.button-load:active {
+  background-color: rgb(21, 100, 26);
+  transform: scale(1.1);
+}
+.end-text {
+  display: none;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.end-text.active {
+  display: block;
+}
