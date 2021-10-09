@@ -1,2 +1,5 @@
 # tokoijo-ecommerce-website
-a website created using react js
+version 0.0.2
+
+a small website project created by me
+source of inspiration > tokopedia.com
