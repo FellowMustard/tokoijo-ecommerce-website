@@ -1,0 +1,122 @@
+.slider-container {
+  max-width: 1200px;
+  height: 300px;
+  margin: 30px auto 0 auto;
+  border-radius: 20px;
+  position: relative;
+  object-fit: cover;
+}
+.slide {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+.slide.current-slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide.next-slide {
+  transform: translateX(100%);
+}
+.slide.last-slide {
+  transform: translateX(-100%);
+}
+.slide-image {
+  border-radius: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+.arrow-left {
+  border-color: transparent;
+  width: 2.4rem;
+  display: flex;
+  align-items: center;
+  height: 2.4rem;
+  position: absolute;
+  font-size: 2rem;
+  top: 45%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  opacity: 0;
+  left: 1%;
+  z-index: 10;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.arrow-right {
+  border-color: transparent;
+  width: 2.4rem;
+  display: flex;
+  align-items: center;
+  height: 2.4rem;
+  position: absolute;
+  font-size: 2rem;
+  top: 45%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 44px -5px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  opacity: 0;
+  right: 1%;
+  z-index: 10;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.slider-container:hover > .arrow-right {
+  opacity: 1;
+  right: -1.4%;
+}
+.arrow-right:hover {
+  transform: scale(1.2);
+}
+.slider-container:hover > .arrow-left {
+  opacity: 1;
+  left: -1.4%;
+}
+.arrow-left:hover {
+  transform: scale(1.2);
+}
+.bullet-container {
+  display: flex;
+  position: absolute;
+  left: 2%;
+  bottom: 5%;
+}
+.bullet {
+  z-index: 9;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(151, 151, 151);
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.bullet.active {
+  background-color: white;
+}
+@media screen and (max-width: 900px) {
+  .slider-container {
+    max-width: 600px;
+    height: 200px;
+  }
+  .slide-image {
+    max-width: 600px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider-container {
+    max-width: 400px;
+    height: 130px;
+  }
+  .slide-image {
+    max-width: 400px;
+    height: 130px;
+  }
+}

@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+}
+.overflow-fixer {
+  overflow: hidden;
+}
+.App {
+  background-color: rgb(225, 255, 227);
+}

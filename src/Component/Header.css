@@ -1,0 +1,122 @@
+.nav-wrapper {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+}
+.top {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 0 25px;
+  background-color: rgb(243, 244, 245);
+  color: rgb(128, 143, 192);
+}
+.link-unformatter {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(105, 115, 150);
+}
+.link-unformatter > p {
+  margin-left: 5px;
+}
+.header {
+  background-color: rgb(3, 172, 14);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 4px 6px 21px -4px rgba(207, 241, 252, 1);
+}
+.header-logo {
+  width: 70px;
+  object-fit: contain;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+.header-search {
+  display: flex;
+  flex: 1;
+  margin-right: clamp(5px, 20px, 40px);
+}
+.header-search-input {
+  height: 12px;
+  border-radius: 5px 0 0 5px;
+  padding: 6px;
+  width: 100%;
+  border: none;
+}
+.header-search-input:focus {
+  outline-color: rgb(3, 172, 14);
+}
+.header-search-icon {
+  background-color: rgb(243, 244, 245);
+  border-radius: 0 5px 5px 0;
+  padding: 4px;
+  color: rgb(159, 166, 176);
+}
+.header-search-icon:hover {
+  background-color: rgb(228, 229, 230);
+}
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-unformatter-icon {
+  text-decoration: none;
+}
+.header-icon {
+  border-radius: 5px;
+  color: white;
+  margin: 0 5px;
+  font-size: 1.3rem;
+  padding: 7px;
+}
+.header-icon:hover {
+  background-color: rgb(13, 94, 19);
+}
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+}
+.user-container-button {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  color: white;
+}
+.user-container-button:hover {
+  background-color: rgb(13, 94, 19);
+}
+.avatar-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.username {
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .image-container {
+    display: none;
+  }
+  .username {
+    display: none;
+  }
+  .header-icon {
+    margin: 0;
+  }
+  .avatar-icon {
+    margin-right: 4px;
+    font-size: 1.5rem;
+  }
+  .user-container {
+    margin-left: 10px;
+  }
+  .user-container-button {
+    padding: 5px 5px;
+  }
+}
